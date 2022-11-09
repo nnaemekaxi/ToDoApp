@@ -1,0 +1,27 @@
+@url = "http://localhost:3000/"
+
+GET http://localhost:3000/ HTTP/1.1
+
+###
+GET http://localhost:3000/636b7dcae825bcbd765f5548 HTTP/1.1
+
+###
+POST http://localhost:3000/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Going",
+    "description": "Family get together"   
+}
+
+###
+PATCH  http://localhost:3000/636b7dcae825bcbd765f5548 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Going",
+    "description": "Family get together"   
+}
+
+###
+DELETE http://localhost:3000/ HTTP/1.1
